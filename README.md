@@ -6,7 +6,9 @@ Spawnpoint est un atelier gratuit pour apprendre à créer sur Roblox. Le site e
 
 ## Ce qu'il y a dedans
 
-- **Cours** : dix cours illustrés pour débutants, 52 leçons (Studio, premier script, interfaces, obby, sauvegarde, client et serveur, simulateur, animations, outils et combat, publication). Chaque cours se termine par un projet final avec une note sur 5 étoiles.
+- **Cours** : quatorze cours illustrés pour débutants, 72 leçons (Studio, premier script, interfaces, obby, sauvegarde, client et serveur, simulateur, animations, outils et combat, publication, lumières, personnages, sons, jeu par manches). Chaque cours se termine par un projet final avec une note sur 5 étoiles.
+- **Progression** : un niveau, des points d'expérience et des badges à débloquer, affichés sur l'accueil.
+- **Installable** : le site peut s'installer comme une application et continue de s'ouvrir hors connexion.
 - **Boutique** : recherche dans le Creator Store, le Marketplace et le DevForum de Roblox (les résultats s'ouvrent sur le site de Roblox), collection d'ID d'assets, accès à la référence de l'API.
 - **Outils** : dix-neuf outils (couleurs, UDim2, TweenInfo, courbe d'XP, revenus Robux, leaderstats, taux de drop, table de butin, portée d'un saut…).
 - **Code** : vingt extraits Luau prêts à copier.
@@ -34,6 +36,7 @@ Puis ouvre http://localhost:8000 dans ton navigateur.
 | `assets/fonts/` | Les polices, hébergées sur place |
 | `vendor/` | La coloration du code (CodeMirror) |
 | `404.html`, `robots.txt` | La page d'erreur et les consignes pour les moteurs de recherche |
+| `manifest.webmanifest`, `sw.js` | L'installation comme application et l'ouverture hors connexion |
 
 Le texte est écrit en français dans le code. La version anglaise vient du dictionnaire `TR` et des règles `TRX`, au début de `assets/app.js`.
 

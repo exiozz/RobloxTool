@@ -5,20 +5,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Spawnpoint</title>
 <meta name="description" content="Atelier gratuit pour apprendre à créer sur Roblox : cours illustrés, outils, extraits de code Luau, recherche dans les boutiques Roblox. Free workshop for learning to create on Roblox.">
-<meta name="theme-color" content="#2F5BEA">
+<meta name="theme-color" content="#ECEEF2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0D11" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Spawnpoint">
 <meta property="og:description" content="Cours, outils et extraits de code pour créer sur Roblox.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232F5BEA'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='800' font-size='40' fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/fonts.css?v=4fa0fc0b91">
-<link rel="stylesheet" href="assets/app.css?v=4fa0fc0b91">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/fonts.css?v=83753d7e8e">
+<link rel="stylesheet" href="assets/app.css?v=83753d7e8e">
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <noscript data-notr><p style="padding:16px;font-weight:700">Ce site a besoin de JavaScript pour fonctionner. This site needs JavaScript to work.</p></noscript>
 <div class="app">
 <nav class="rail" aria-label="Sections">
-  <a class="logo" href="#accueil" aria-label="Spawnpoint, accueil">S</a>
+  <a class="logo" href="#accueil" aria-label="Spawnpoint, accueil"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B84FF"/><stop offset="1" stop-color="#2447D6"/></linearGradient></defs><rect x="11" y="11" width="42" height="42" rx="10" transform="rotate(45 32 32)" fill="url(#lg)"/><circle cx="32" cy="32" r="10.5" fill="none" stroke="#fff" stroke-width="5.5"/><circle cx="32" cy="32" r="3.2" fill="#fff"/></svg><span data-notr>Spawnpoint</span></a>
   <button class="side-t side-in" data-side title="Masquer le menu" aria-label="Masquer le menu"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/></svg></button>
   <a data-nav href="#accueil"><svg class="i" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Accueil</a>
   <a data-nav href="#boutique"><svg class="i" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>Boutique</a>  <a data-nav href="#outils"><svg class="i" viewBox="0 0 24 24"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></svg>Outils</a>
@@ -30,6 +33,7 @@
 <div>
 <header class="bar">
   <button class="icon-btn side-t" data-side title="Afficher ou masquer le menu" aria-label="Afficher ou masquer le menu" aria-expanded="true"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/></svg></button>
+  <a class="bar-logo" href="#accueil" aria-label="Spawnpoint, accueil"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B84FF"/><stop offset="1" stop-color="#2447D6"/></linearGradient></defs><rect x="11" y="11" width="42" height="42" rx="10" transform="rotate(45 32 32)" fill="url(#lg2)"/><circle cx="32" cy="32" r="10.5" fill="none" stroke="#fff" stroke-width="5.5"/><circle cx="32" cy="32" r="3.2" fill="#fff"/></svg></a>
   <h2 id="bar-title">Accueil</h2>
   <button class="search" id="pal-open"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Chercher un outil, un cours, un snippet…</span><kbd>Ctrl K</kbd></button>
   <span class="sp"></span>
@@ -51,7 +55,8 @@
         <button data-act="search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Tout chercher</button>
         <button data-act="learn"><svg class="i" viewBox="0 0 24 24"><path d="M7 4l12 8-12 8z"/></svg>Continuer le cours</button>
       </div>
-      <div class="stats" id="hm-stats"></div>
+      <div class="level" id="hm-level"></div>
+      <div class="tiles-stat" id="hm-stats"></div>
     </div>
     <div class="card focus s4">
       <h3>Concentration</h3>
@@ -63,6 +68,7 @@
     <div class="card s4"><h3>Favoris</h3><div class="list" id="hm-favs"></div></div>
     <div class="card s4"><h3>Ma collection</h3><div class="list" id="hm-coll"></div></div>
     <div class="card s4"><h3>Mes cours</h3><div class="list" id="hm-courses"></div></div>
+    <div class="card s12"><h3>Badges <span class="hint" id="hm-bcount"></span></h3><div class="badges" id="hm-badges"></div></div>
     <div class="card s12"><h3>Raccourcis Roblox</h3><div class="choices" id="hm-links"></div></div>    <div class="card s12"><h3>Prochaines étapes</h3><div class="steps-next" id="hm-learn"></div></div>
   </div>
 </section>
@@ -374,8 +380,9 @@ Legendaire, 5</textarea></div>
 <div class="pal" id="pal" hidden><div class="pal-box"><input type="text" id="pal-q" placeholder="Tape pour chercher…" aria-label="Recherche globale" spellcheck="false"><div id="pal-list"></div><div class="pal-foot"><span><kbd>↑</kbd> <kbd>↓</kbd> choisir</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>Échap</kbd> fermer</span></div></div></div>
 <div class="modal" id="modal" hidden><div class="modal-box" role="dialog" aria-modal="true"><div id="modal-body"></div></div></div>
 <div id="toasts" aria-live="polite"></div>
-<script src="vendor/runmode-standalone.js?v=4fa0fc0b91"></script>
-<script src="vendor/lua.js?v=4fa0fc0b91"></script>
-<script src="assets/app.js?v=4fa0fc0b91"></script>
+<script src="vendor/runmode-standalone.js?v=83753d7e8e"></script>
+<script src="vendor/lua.js?v=83753d7e8e"></script>
+<script src="assets/app.js?v=83753d7e8e"></script>
+<script>if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(function () {});</script>
 </body>
 </html>
