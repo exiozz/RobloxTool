@@ -51,4 +51,4 @@ Spawnpoint est un projet indépendant. Il n'est pas affilié à Roblox Corporati
 
 ## Crédits
 
-Polices Space Grotesk, Inter et JetBrains Mono (SIL Open Font License). Coloration du code par CodeMirror (licence MIT). Les licences sont dans `assets/fonts/` et `vendor/`.
+Polices Bricolage Grotesque, Geist et Geist Mono (SIL Open Font License). Coloration du code par CodeMirror (licence MIT). Les licences sont dans `assets/fonts/` et `vendor/`.
