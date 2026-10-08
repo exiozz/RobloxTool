@@ -6,7 +6,7 @@ Spawnpoint est un atelier gratuit pour apprendre à créer sur Roblox. Le site e
 
 ## Ce qu'il y a dedans
 
-- **Cours** : sept cours illustrés pour débutants (Studio, premier script, interfaces, obby, sauvegarde, client et serveur, simulateur). Chaque cours se termine par un projet final avec une note sur 5 étoiles.
+- **Cours** : dix cours illustrés pour débutants, 52 leçons (Studio, premier script, interfaces, obby, sauvegarde, client et serveur, simulateur, animations, outils et combat, publication). Chaque cours se termine par un projet final avec une note sur 5 étoiles.
 - **Boutique** : recherche dans le Creator Store, le Marketplace et le DevForum de Roblox (les résultats s'ouvrent sur le site de Roblox), collection d'ID d'assets, accès à la référence de l'API.
 - **Outils** : dix-neuf outils (couleurs, UDim2, TweenInfo, courbe d'XP, revenus Robux, leaderstats, taux de drop, table de butin, portée d'un saut…).
 - **Code** : vingt extraits Luau prêts à copier.
