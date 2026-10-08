@@ -3,24 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Établi Dev</title>
+<title>Spawnpoint</title>
 <meta name="description" content="Atelier gratuit pour apprendre à créer sur Roblox : cours illustrés, outils, extraits de code Luau, recherche dans les boutiques Roblox. Free workshop for learning to create on Roblox.">
-<meta name="theme-color" content="#110F0E">
-<meta property="og:title" content="Établi Dev">
+<meta name="theme-color" content="#111216">
+<meta property="og:title" content="Spawnpoint">
 <meta property="og:description" content="Cours, outils et extraits de code pour créer sur Roblox.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23FF6A3D'/%3E%3Cstop offset='1' stop-color='%23FFB23E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Cpath d='M22 20h20v6H29v6h11v6H29v6h13v6H22zM30 9l8-3v5l-8 3z' fill='%232A1205'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23335FFF'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='800' font-size='40' fill='%23FFFFFF'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
+<a class="skip" href="#main">Aller au contenu</a>
+<noscript data-notr><p style="padding:16px;font-weight:700">Ce site a besoin de JavaScript pour fonctionner. This site needs JavaScript to work.</p></noscript>
 <div class="app">
 <nav class="rail" aria-label="Sections">
-  <a class="logo" href="#accueil" aria-label="Établi Dev, accueil">É</a>
+  <a class="logo" href="#accueil" aria-label="Spawnpoint, accueil">S</a>
   <a data-nav href="#accueil"><svg class="i" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Accueil</a>
   <a data-nav href="#boutique"><svg class="i" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>Boutique</a>  <a data-nav href="#outils"><svg class="i" viewBox="0 0 24 24"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></svg>Outils</a>
   <a data-nav href="#code"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h11"/></svg>Code</a>
-  <a data-nav href="#projets"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="10" rx="1"/><rect x="17" y="4" width="4" height="13" rx="1"/></svg>Projets</a>
   <a data-nav href="#apprendre"><svg class="i" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>Cours</a>
   <a data-nav href="#memo"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M10 5v14"/></svg>Mémo</a>
 </nav>
@@ -34,7 +35,7 @@
   <button class="icon-btn" data-act="settings" title="Profil et réglages" aria-label="Profil et réglages"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
 <!-- ============ ACCUEIL ============ -->
 <section id="p-accueil" class="page">
   <div class="bento">
@@ -44,7 +45,7 @@
       <p class="sub" id="hm-sub"></p>
       <div class="quick">
         <button data-act="shop"><svg class="i" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>Ouvrir la boutique</button>
-        <button data-act="newtask"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Nouvelle tâche</button>
+        <button data-act="tools"><svg class="i" viewBox="0 0 24 24"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></svg>Ouvrir les outils</button>
         <button data-act="search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Tout chercher</button>
         <button data-act="learn"><svg class="i" viewBox="0 0 24 24"><path d="M7 4l12 8-12 8z"/></svg>Continuer le cours</button>
       </div>
@@ -58,7 +59,7 @@
       <div class="row" style="justify-content:center"><button class="btn" id="fc-go">Démarrer</button><button class="btn ghost" id="fc-reset">Remettre à zéro</button></div>
     </div>
     <div class="card s4"><h3>Favoris</h3><div class="list" id="hm-favs"></div></div>
-    <div class="card s4"><h3>Tâches ouvertes</h3><div class="list" id="hm-tasks"></div></div>
+    <div class="card s4"><h3>Ma collection</h3><div class="list" id="hm-coll"></div></div>
     <div class="card s4"><h3>Mes cours</h3><div class="list" id="hm-courses"></div></div>
     <div class="card s12"><h3>Raccourcis Roblox</h3><div class="choices" id="hm-links"></div></div>    <div class="card s12"><h3>Prochaines étapes</h3><div class="steps-next" id="hm-learn"></div></div>
   </div>
@@ -66,7 +67,7 @@
 
 <!-- ============ OUTILS ============ -->
 <section id="p-outils" class="page" hidden>
-  <div class="head"><h1>Boîte à outils</h1><p>Quinze outils pour les calculs qu'on refait sans arrêt dans Studio. Mets une étoile à ceux que tu utilises le plus.</p></div>
+  <div class="head"><h1>Boîte à outils</h1><p>Dix-neuf outils pour les calculs qu'on refait sans arrêt dans Studio. Mets une étoile à ceux que tu utilises le plus.</p></div>
   <div class="filters"><input type="text" id="tl-q" placeholder="Filtrer les outils…" aria-label="Filtrer les outils"><span id="tl-chips" style="display:contents"></span></div>
   <p class="empty" id="tl-empty" hidden>Aucun outil ne correspond. Efface le filtre ou choisis « Tout ».</p>
   <div class="grid" id="tl-grid">
@@ -148,6 +149,30 @@
     <div class="panel" id="t-price"><h2>Prix à fixer</h2>
       <div class="row"><div class="field"><label for="pr-want">Je veux recevoir (R$)</label><input type="number" id="pr-want" value="100" min="0"></div></div>
       <div class="out" id="pr-out"></div><p class="hint">Roblox garde 30 % sur les passes et les produits : il faut donc afficher un prix plus haut que ce que tu veux toucher.</p></div>
+    <div class="panel" id="t-jump"><h2>Portée d'un saut</h2>
+      <div class="row"><div class="field"><label for="jp-s">Vitesse (WalkSpeed)</label><input type="number" id="jp-s" value="16" min="0" step="any"></div><div class="field"><label for="jp-h">Hauteur de saut (JumpHeight)</label><input type="number" id="jp-h" value="7.2" min="0" step="any"></div><div class="field"><label for="jp-g">Gravité</label><input type="number" id="jp-g" value="196.2" min="1" step="any"></div></div>
+      <div class="out" id="jp-out"></div><p class="hint">Estimation théorique sur terrain plat. Teste toujours le saut toi-même avant de valider une étape.</p></div>
+
+    <div class="panel" id="t-loot"><h2>Table de butin</h2>
+      <div class="field"><label for="lt-in">Un objet par ligne : nom, poids</label><textarea id="lt-in" spellcheck="false" style="min-height:84px">Commun, 70
+Rare, 25
+Legendaire, 5</textarea></div>
+      <div class="scroll"><table id="lt-table"></table></div>
+      <pre id="lt-code" class="cm-s-etabli"></pre>
+      <div class="row"><button class="btn ghost" data-copy="lt-code">Copier la fonction Luau</button></div>
+      <p class="hint">Le poids n'est pas un pourcentage : un objet de poids 70 sort 14 fois plus souvent qu'un objet de poids 5.</p></div>
+
+    <div class="panel" id="t-abbr"><h2>Grands nombres</h2>
+      <div class="row"><div class="field"><label for="ab-n">Nombre</label><input type="number" id="ab-n" value="1532000" min="0" step="any"></div></div>
+      <div class="out" id="ab-out"></div>
+      <pre id="ab-code" class="cm-s-etabli"></pre>
+      <div class="row"><button class="btn ghost" data-copy="ab-code">Copier la fonction Luau</button></div>
+      <p class="hint">Indispensable dans un simulateur, où les scores dépassent vite le million.</p></div>
+
+    <div class="panel" id="t-dps"><h2>Dégâts par seconde</h2>
+      <div class="row"><div class="field"><label for="dp-d">Dégâts par coup</label><input type="number" id="dp-d" value="25" min="0" step="any"></div><div class="field"><label for="dp-r">Coups par seconde</label><input type="number" id="dp-r" value="2" min="0" step="any"></div><div class="field"><label for="dp-h">Points de vie de la cible</label><input type="number" id="dp-h" value="100" min="0" step="any"></div></div>
+      <div class="out" id="dp-out"></div></div>
+
     <div class="panel" id="t-drop"><h2>Taux de drop</h2>
       <div class="row"><div class="field"><label for="dr-p">Chance par essai (%)</label><input type="number" id="dr-p" value="2" min="0" max="100" step="any"></div><div class="field"><label for="dr-n">Nombre d'essais</label><input type="number" id="dr-n" value="50" min="0"></div></div>
       <div class="out" id="dr-out"></div><p class="hint">La malchance existe : un compteur de pitié, qui garantit l'objet après un certain nombre d'essais, évite de frustrer les joueurs.</p></div>
@@ -180,22 +205,6 @@
       <div class="row"><div class="field"><label for="sn-title">Titre</label><input type="text" id="sn-title" required></div><div class="field"><label for="sn-eng">Catégorie</label><select id="sn-eng"></select></div></div>
       <textarea id="sn-codein" required spellcheck="false" aria-label="Code du snippet"></textarea><div><button class="btn" type="submit">Enregistrer</button></div></form></details>
   <div class="grid" id="sn-list" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr))"></div>
-</section>
-
-<!-- ============ PROJETS ============ -->
-<section id="p-projets" class="page" hidden>
-  <div class="head"><h1>Projets</h1><p>Glisse les cartes d'une colonne à l'autre. Clique sur un titre pour modifier la tâche.</p></div>
-  <form class="panel" id="tk-form" style="margin-bottom:16px">
-    <div class="row"><div class="field" style="flex:3 1 14rem"><label for="tk-title">Nouvelle tâche</label><input type="text" id="tk-title" required placeholder="Ex. Corriger le saut double"></div>
-      <div class="field"><label for="tk-proj">Projet</label><input type="text" id="tk-proj" placeholder="Mon jeu" list="tk-projs"><datalist id="tk-projs"></datalist></div>
-      <div class="field"><label for="tk-type">Type</label><select id="tk-type"><option value="feat">Fonctionnalité</option><option value="bug">Bug</option><option value="idee">Idée</option></select></div>
-      <div class="field"><label for="tk-prio">Priorité</label><select id="tk-prio"><option value="n">Normale</option><option value="h">Urgente</option><option value="l">Plus tard</option></select></div>
-      <button class="btn" type="submit">Ajouter</button></div>
-    <div class="row" style="align-items:center"><div class="field" style="max-width:16rem"><label for="tk-filter">Afficher</label><select id="tk-filter"></select></div>
-      <div class="field" style="flex:2 1 12rem"><span class="lbl" id="tk-prog-l"></span><div class="prog"><i id="tk-prog" style="width:0%"></i></div></div>
-      <button class="btn ghost sm" type="button" id="tk-clear">Retirer les exemples</button></div>
-  </form>
-  <div class="board" id="board"></div>
 </section>
 
 <!-- ============ APPRENDRE ============ -->
@@ -233,15 +242,62 @@
       <li><b>Regarde qui l'a créé.</b> Un créateur connu, beaucoup d'avis et une date récente sont de bons signes.</li>
       <li><b>Lis les scripts du modèle.</b> Méfie-toi d'un require suivi d'un nombre, de getfenv, de loadstring ou d'un script caché au fond de plusieurs dossiers.</li>
       <li><b>Refuse les permissions inutiles.</b> Un plugin de construction n'a pas besoin d'envoyer des requêtes HTTP.</li>
-      <li><b>Garde tes identifiants pour toi.</b> Aucun outil sérieux ne demande ton mot de passe ni ton cookie .ROBLOSECURITY.</li></ul></div>
+      <li><b>Garde tes identifiants pour toi.</b> Aucun outil sérieux ne demande ton mot de passe ni ton cookie .ROBLOSECURITY.</li></ul><p class="hint">Avant d'installer quoi que ce soit, lis aussi la page <a href="#securite">Rester en sécurité</a>.</p></div>
   </div>
 </section>
+<!-- ============ À PROPOS ET SÉCURITÉ ============ -->
+<section id="p-apropos" class="page legal" hidden data-notr>
+<div data-l="fr">
+  <h1>À propos et aide</h1><p class="hint">Les réponses aux questions les plus fréquentes.</p>
+  <h2>C'est quoi, Spawnpoint ?</h2><p>Un atelier gratuit pour apprendre à créer des jeux sur Roblox : des cours pour débuter, des outils de calcul, des extraits de code et un accès rapide aux boutiques de Roblox. C'est un projet indépendant, créé par exiozz, sans lien avec Roblox Corporation.</p>
+  <h2>Est-ce que c'est gratuit ?</h2><p>Oui, entièrement. Il n'y a pas de compte à créer, pas de publicité et rien à acheter.</p>
+  <h2>Où sont enregistrées mes données ?</h2><p>Dans ton navigateur, sur ton appareil. Elles ne te suivent pas d'un appareil à l'autre. Pour les déplacer, ouvre les réglages, copie ta sauvegarde, puis restaure-la sur l'autre appareil. Si tu effaces les données de ton navigateur, tout est perdu.</p>
+  <h2>Comment est calculée la note d'un projet ?</h2><p>Un petit programme regarde ta capture d'écran (couleurs, détails, taille) et la liste que tu as cochée. Il ne comprend pas vraiment ton travail : la note est approximative et sert à t'encourager. Pour un vrai avis, montre ton projet à un ami ou sur le DevForum.</p>
+  <h2>Pourquoi les vidéos s'ouvrent-elles sur YouTube ?</h2><p>Le bouton « Voir des vidéos » lance une recherche YouTube sur le sujet de la leçon. Le site ne choisit pas les vidéos et n'en héberge aucune. Si tu es jeune, demande l'accord d'un parent avant d'aller sur YouTube.</p>
+  <h2>Faut-il se connecter avec Roblox ?</h2><p>Non. Tout fonctionne sans connexion. Quand le bouton « Se connecter avec Roblox » est proposé, il sert seulement à afficher ton pseudo et un lien vers ton profil. Le site ne voit jamais ton mot de passe.</p>
+  <h2>Comment changer de langue ?</h2><p>Avec le bouton FR / EN en haut de la page, ou dans les réglages. Les commentaires dans les extraits de code restent en français.</p>
+  <h2>J'ai trouvé une erreur ou j'ai une idée</h2><p>Ouvre un ticket sur <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">la page GitHub du projet</a>. Roblox évolue vite : si une leçon ne correspond plus à ce que tu vois dans Studio, dis-le.</p>
+</div>
+<div data-l="en">
+  <h1>About and help</h1><p class="hint">Answers to the most common questions.</p>
+  <h2>What is Spawnpoint?</h2><p>A free workshop for learning to make games on Roblox: beginner lessons, calculation tools, code snippets and quick access to the Roblox stores. It is an independent project, made by exiozz, with no connection to Roblox Corporation.</p>
+  <h2>Is it free?</h2><p>Yes, completely. There is no account to create, no advertising and nothing to buy.</p>
+  <h2>Where is my data stored?</h2><p>In your browser, on your device. It does not follow you from one device to another. To move it, open the settings, copy your backup, then restore it on the other device. If you clear your browser data, everything is lost.</p>
+  <h2>How is a project grade calculated?</h2><p>A small program looks at your screenshot (colours, detail, size) and at the list you ticked. It does not really understand your work: the grade is approximate and is there to encourage you. For a real opinion, show your project to a friend or on the DevForum.</p>
+  <h2>Why do videos open on YouTube?</h2><p>The "Watch videos" button starts a YouTube search on the lesson's topic. The site does not pick the videos and hosts none. If you are young, ask a parent before going to YouTube.</p>
+  <h2>Do I have to sign in with Roblox?</h2><p>No. Everything works without signing in. When the "Sign in with Roblox" button is offered, it is only used to show your username and a link to your profile. The site never sees your password.</p>
+  <h2>How do I change the language?</h2><p>With the FR / EN button at the top of the page, or in the settings. Comments inside the code snippets stay in French.</p>
+  <h2>I found a mistake or I have an idea</h2><p>Open an issue on <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">the project's GitHub page</a>. Roblox changes quickly: if a lesson no longer matches what you see in Studio, say so.</p>
+</div>
+</section>
+
+<section id="p-securite" class="page legal" hidden data-notr>
+<div data-l="fr">
+  <h1>Rester en sécurité</h1><p class="hint">Les bons réflexes quand on crée et qu'on joue sur Roblox.</p>
+  <h2>Protège ton compte</h2><ul><li>Choisis un mot de passe que tu n'utilises nulle part ailleurs.</li><li>Active la validation en deux étapes dans les paramètres de sécurité de Roblox.</li><li>Ajoute une adresse e-mail vérifiée, avec l'aide d'un parent, pour pouvoir récupérer ton compte.</li></ul>
+  <h2>Reconnais les arnaques</h2><ul><li>Les « Robux gratuits » n'existent pas. Un site ou une vidéo qui en promet veut voler ton compte.</li><li>Ne donne jamais ton mot de passe ni ton cookie .ROBLOSECURITY, même à quelqu'un qui dit travailler pour Roblox.</li><li>Ne colle jamais dans ton navigateur un code qu'un inconnu t'envoie.</li><li>Vérifie l'adresse avant de te connecter : la vraie est roblox.com.</li></ul>
+  <h2>Dans Studio</h2><ul><li>Lis les scripts d'un modèle gratuit avant de l'utiliser. La page Boutique explique quoi chercher.</li><li>N'installe que les plugins dont tu as besoin, et refuse les permissions inutiles.</li><li>N'invite dans Team Create que des personnes en qui tu as confiance : elles peuvent tout modifier.</li></ul>
+  <h2>Avec les autres joueurs</h2><ul><li>Ne donne pas ton vrai nom, ton adresse, ton école ni ton numéro de téléphone.</li><li>Si quelqu'un te met mal à l'aise, bloque-le, signale-le, et parles-en à un adulte.</li></ul>
+  <h2>L'argent</h2><ul><li>Demande toujours à un parent avant d'acheter des Robux.</li><li>Pour gagner de l'argent avec tes jeux, il faut remplir les conditions du programme DevEx. Lis-les sur le site de Roblox avec un parent.</li></ul>
+  <h2>Pour les parents</h2><p>Roblox propose des contrôles parentaux : limites de discussion, de dépenses et de temps. Ils se règlent depuis le compte du parent. L'aide officielle est sur <a href="https://en.help.roblox.com/" target="_blank" rel="noopener">en.help.roblox.com</a>.</p>
+</div>
+<div data-l="en">
+  <h1>Staying safe</h1><p class="hint">Good habits when you create and play on Roblox.</p>
+  <h2>Protect your account</h2><ul><li>Choose a password you use nowhere else.</li><li>Turn on 2-step verification in Roblox's security settings.</li><li>Add a verified email address, with a parent's help, so you can recover your account.</li></ul>
+  <h2>Spot the scams</h2><ul><li>"Free Robux" does not exist. A site or video that promises it wants to steal your account.</li><li>Never give your password or your .ROBLOSECURITY cookie, even to someone who says they work for Roblox.</li><li>Never paste into your browser a piece of code a stranger sends you.</li><li>Check the address before you sign in: the real one is roblox.com.</li></ul>
+  <h2>In Studio</h2><ul><li>Read the scripts of a free model before using it. The Shop page explains what to look for.</li><li>Install only the plugins you need, and refuse permissions they don't need.</li><li>Invite into Team Create only people you trust: they can change everything.</li></ul>
+  <h2>With other players</h2><ul><li>Do not give your real name, your address, your school or your phone number.</li><li>If someone makes you uncomfortable, block them, report them, and tell an adult.</li></ul>
+  <h2>Money</h2><ul><li>Always ask a parent before buying Robux.</li><li>To earn money from your games, you must meet the conditions of the DevEx programme. Read them on the Roblox website with a parent.</li></ul>
+  <h2>For parents</h2><p>Roblox offers parental controls: limits on chat, spending and screen time. They are set from the parent's account. Official help is at <a href="https://en.help.roblox.com/" target="_blank" rel="noopener">en.help.roblox.com</a>.</p>
+</div>
+</section>
+
 <!-- ============ PAGES LÉGALES ============ -->
 <section id="p-conditions" class="page legal" hidden data-notr>
 <div data-l="fr">
   <h1>Conditions d'utilisation</h1><p class="hint">Dernière mise à jour : 8 octobre 2026</p>
-  <h2>1. Le service</h2><p>Établi Dev est un site gratuit qui propose des outils, des extraits de code et des cours pour apprendre à créer des jeux sur Roblox. En utilisant le site, tu acceptes ces conditions.</p>
-  <h2>2. Aucun lien avec Roblox</h2><p>Établi Dev est un projet indépendant. Il n'est ni affilié à Roblox Corporation, ni approuvé ou sponsorisé par elle. Roblox et Roblox Studio sont des marques de Roblox Corporation. Les liens vers Roblox, le DevForum ou YouTube mènent à des sites qui ont leurs propres règles.</p>
+  <h2>1. Le service</h2><p>Spawnpoint est un site gratuit qui propose des outils, des extraits de code et des cours pour apprendre à créer des jeux sur Roblox. En utilisant le site, tu acceptes ces conditions.</p>
+  <h2>2. Aucun lien avec Roblox</h2><p>Spawnpoint est un projet indépendant. Il n'est ni affilié à Roblox Corporation, ni approuvé ou sponsorisé par elle. Roblox et Roblox Studio sont des marques de Roblox Corporation. Les liens vers Roblox, le DevForum ou YouTube mènent à des sites qui ont leurs propres règles.</p>
   <h2>3. Ce que tu peux faire</h2><p>Le site est gratuit, pour ton usage personnel. Tu peux utiliser librement les extraits de code dans tes propres jeux. Tu ne dois pas utiliser le site pour tricher, nuire à d'autres personnes ou contourner les règles de Roblox. Quand tu crées sur Roblox, tu dois respecter les conditions d'utilisation de Roblox.</p>
   <h2>4. Pas de garantie</h2><p>Les cours, les extraits de code et les calculs sont fournis pour apprendre, en l'état. Ils peuvent contenir des erreurs ou ne plus être à jour : teste toujours avant de t'en servir. Les calculs de Robux et de revenus sont des estimations, pas des promesses.</p>
   <h2>5. Tes données</h2><p>Tout ce que tu saisis est enregistré dans ton navigateur, pas sur un serveur. Si tu effaces les données de ton navigateur, elles sont perdues. Pense à copier une sauvegarde depuis les réglages. Les détails sont dans la page <a href="#confidentialite">Confidentialité</a>.</p>
@@ -251,8 +307,8 @@
 </div>
 <div data-l="en">
   <h1>Terms of Service</h1><p class="hint">Last updated: 8 October 2026</p>
-  <h2>1. The service</h2><p>Établi Dev is a free website offering tools, code snippets and lessons for learning to make games on Roblox. By using the site, you agree to these terms.</p>
-  <h2>2. Not affiliated with Roblox</h2><p>Établi Dev is an independent project. It is not affiliated with, endorsed by or sponsored by Roblox Corporation. Roblox and Roblox Studio are trademarks of Roblox Corporation. Links to Roblox, the DevForum or YouTube lead to sites that have their own rules.</p>
+  <h2>1. The service</h2><p>Spawnpoint is a free website offering tools, code snippets and lessons for learning to make games on Roblox. By using the site, you agree to these terms.</p>
+  <h2>2. Not affiliated with Roblox</h2><p>Spawnpoint is an independent project. It is not affiliated with, endorsed by or sponsored by Roblox Corporation. Roblox and Roblox Studio are trademarks of Roblox Corporation. Links to Roblox, the DevForum or YouTube lead to sites that have their own rules.</p>
   <h2>3. What you may do</h2><p>The site is free, for your personal use. You may freely use the code snippets in your own games. You must not use the site to cheat, to harm other people or to get around Roblox's rules. When you create on Roblox, you must follow the Roblox Terms of Use.</p>
   <h2>4. No warranty</h2><p>The lessons, code snippets and calculations are provided for learning, as is. They may contain mistakes or be out of date: always test before relying on them. Robux and earnings calculations are estimates, not promises.</p>
   <h2>5. Your data</h2><p>Everything you enter is stored in your browser, not on a server. If you clear your browser data, it is lost. Remember to copy a backup from the settings. Details are on the <a href="#confidentialite">Privacy</a> page.</p>
@@ -267,10 +323,10 @@
   <h1>Politique de confidentialité</h1><p class="hint">Dernière mise à jour : 8 octobre 2026</p>
   <h2>En bref</h2><p>Pas de compte, pas de publicité, pas de traceur, pas de cookie. L'éditeur du site ne reçoit aucune donnée sur toi.</p>
   <h2>Ce qui est enregistré, et où</h2><p>Ces informations sont enregistrées uniquement dans le stockage local de ton navigateur, sur ton appareil :</p>
-  <ul><li>ton prénom ou pseudo, ton pseudo et ton identifiant Roblox, si tu les as saisis ;</li><li>tes tâches, tes extraits de code, tes favoris et ta collection d'assets ;</li><li>ta progression dans les cours et tes notes ;</li><li>tes réglages, comme la langue et le thème.</li></ul>
+  <ul><li>ton prénom ou pseudo, ton pseudo et ton identifiant Roblox, si tu les as saisis ;</li><li>tes extraits de code, tes favoris et ta collection d'assets ;</li><li>ta progression dans les cours et tes notes ;</li><li>tes réglages, comme la langue et le thème.</li></ul>
   <p>Elles ne sont jamais envoyées à un serveur. Pour tout supprimer, ouvre les réglages et choisis « Tout effacer », ou efface les données du site dans ton navigateur.</p>
   <h2>Ta capture d'écran</h2><p>La capture que tu ajoutes à un projet final reste sur ton appareil. Un petit programme l'analyse dans ton navigateur (couleurs, détails, taille) pour calculer une note approximative. Elle n'est envoyée nulle part et n'est pas enregistrée.</p>
-  <h2>La connexion avec Roblox</h2><p>Si le bouton « Se connecter avec Roblox » est proposé et que tu l'utilises, la connexion se fait sur le site de Roblox. Établi Dev reçoit seulement ton identifiant, ton pseudo et ton nom affiché, et les enregistre dans ton navigateur. Il ne voit jamais ton mot de passe et ne conserve aucun jeton d'accès.</p>
+  <h2>La connexion avec Roblox</h2><p>Si le bouton « Se connecter avec Roblox » est proposé et que tu l'utilises, la connexion se fait sur le site de Roblox. Spawnpoint reçoit seulement ton identifiant, ton pseudo et ton nom affiché, et les enregistre dans ton navigateur. Il ne voit jamais ton mot de passe et ne conserve aucun jeton d'accès.</p>
   <h2>L'hébergeur</h2><p>Le site est hébergé par GitHub Pages. Comme tout hébergeur, GitHub reçoit des données techniques quand tu charges une page, par exemple ton adresse IP. Voir la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>. Les polices et les scripts sont servis par le site lui-même : le chargement d'une page ne contacte aucun autre service.</p>
   <h2>Les liens externes</h2><p>Les liens vers Roblox, YouTube ou le DevForum ouvrent des sites qui ont leurs propres politiques de confidentialité. Rien ne leur est transmis tant que tu ne cliques pas.</p>
   <h2>Tes droits</h2><p>Le règlement européen sur la protection des données te donne un droit d'accès, de rectification et d'effacement. Comme tes données restent dans ton navigateur, tu les contrôles directement. Pour toute question, ouvre un ticket sur <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">la page GitHub du projet</a>.</p>
@@ -279,10 +335,10 @@
   <h1>Privacy Policy</h1><p class="hint">Last updated: 8 October 2026</p>
   <h2>In short</h2><p>No account, no ads, no trackers, no cookies. The publisher of the site receives no data about you.</p>
   <h2>What is stored, and where</h2><p>This information is stored only in your browser's local storage, on your device:</p>
-  <ul><li>your first name or nickname, your Roblox username and ID, if you entered them;</li><li>your tasks, code snippets, favourites and asset collection;</li><li>your progress in the lessons and your grades;</li><li>your settings, such as language and theme.</li></ul>
+  <ul><li>your first name or nickname, your Roblox username and ID, if you entered them;</li><li>your code snippets, favourites and asset collection;</li><li>your progress in the lessons and your grades;</li><li>your settings, such as language and theme.</li></ul>
   <p>It is never sent to a server. To delete everything, open the settings and choose "Erase everything", or clear the site's data in your browser.</p>
   <h2>Your screenshot</h2><p>The screenshot you add to a final project stays on your device. A small program analyses it in your browser (colours, detail, size) to work out an approximate grade. It is not sent anywhere and it is not saved.</p>
-  <h2>Signing in with Roblox</h2><p>If the "Sign in with Roblox" button is offered and you use it, sign-in happens on the Roblox website. Établi Dev only receives your user ID, username and display name, and stores them in your browser. It never sees your password and keeps no access token.</p>
+  <h2>Signing in with Roblox</h2><p>If the "Sign in with Roblox" button is offered and you use it, sign-in happens on the Roblox website. Spawnpoint only receives your user ID, username and display name, and stores them in your browser. It never sees your password and keeps no access token.</p>
   <h2>The host</h2><p>The site is hosted by GitHub Pages. Like any host, GitHub receives technical data when you load a page, such as your IP address. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>. Fonts and scripts are served by the site itself: loading a page contacts no other service.</p>
   <h2>External links</h2><p>Links to Roblox, YouTube or the DevForum open sites that have their own privacy policies. Nothing is sent to them until you click.</p>
   <h2>Your rights</h2><p>The EU General Data Protection Regulation gives you a right of access, correction and erasure. Because your data stays in your browser, you control it directly. For any question, open an issue on <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">the project's GitHub page</a>.</p>
@@ -292,23 +348,23 @@
 <section id="p-mentions" class="page legal" hidden data-notr>
 <div data-l="fr">
   <h1>Mentions légales</h1><p class="hint">Dernière mise à jour : 8 octobre 2026</p>
-  <h2>Éditeur du site</h2><p>Établi Dev est un site personnel, non professionnel, édité par exiozz (pseudonyme GitHub). Directeur de la publication : exiozz. Contact : <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">github.com/exiozz/RobloxTool/issues</a>.</p>
+  <h2>Éditeur du site</h2><p>Spawnpoint est un site personnel, non professionnel, édité par exiozz (pseudonyme GitHub). Directeur de la publication : exiozz. Contact : <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">github.com/exiozz/RobloxTool/issues</a>.</p>
   <h2>Hébergeur</h2><p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Site : <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>.</p>
   <h2>Propriété intellectuelle</h2><p>Le code source du site est disponible sur GitHub. Roblox et Roblox Studio sont des marques de Roblox Corporation, avec laquelle ce site n'a aucun lien.</p>
-  <h2>Crédits</h2><p>Polices Unbounded, Onest et JetBrains Mono, sous licence SIL Open Font License. Coloration du code par CodeMirror, sous licence MIT.</p>
+  <h2>Crédits</h2><p>Polices Montserrat, Figtree et JetBrains Mono, sous licence SIL Open Font License. Coloration du code par CodeMirror, sous licence MIT.</p>
 </div>
 <div data-l="en">
   <h1>Legal Notice</h1><p class="hint">Last updated: 8 October 2026</p>
-  <h2>Publisher</h2><p>Établi Dev is a personal, non-commercial website published by exiozz (GitHub username). Publication director: exiozz. Contact: <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">github.com/exiozz/RobloxTool/issues</a>.</p>
+  <h2>Publisher</h2><p>Spawnpoint is a personal, non-commercial website published by exiozz (GitHub username). Publication director: exiozz. Contact: <a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">github.com/exiozz/RobloxTool/issues</a>.</p>
   <h2>Host</h2><p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Website: <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>.</p>
   <h2>Intellectual property</h2><p>The site's source code is available on GitHub. Roblox and Roblox Studio are trademarks of Roblox Corporation, with which this site has no connection.</p>
-  <h2>Credits</h2><p>Unbounded, Onest and JetBrains Mono typefaces, under the SIL Open Font License. Code highlighting by CodeMirror, under the MIT licence.</p>
+  <h2>Credits</h2><p>Montserrat, Figtree and JetBrains Mono typefaces, under the SIL Open Font License. Code highlighting by CodeMirror, under the MIT licence.</p>
 </div>
 </section>
 <footer>
-  <p>Tes tâches, snippets, favoris, cours et réglages sont enregistrés dans ce navigateur uniquement. Tu peux en copier une sauvegarde depuis les réglages.</p>
-  <p class="foot-links"><a href="#conditions">Conditions d'utilisation</a><a href="#confidentialite">Confidentialité</a><a href="#mentions">Mentions légales</a><a href="https://github.com/exiozz/RobloxTool" target="_blank" rel="noopener">Code source sur GitHub ↗</a></p>
-  <p>Établi Dev n'est pas affilié à Roblox Corporation. Roblox et Roblox Studio sont des marques de Roblox Corporation.</p>
+  <p>Tes snippets, favoris, cours et réglages sont enregistrés dans ce navigateur uniquement. Tu peux en copier une sauvegarde depuis les réglages.</p>
+  <p class="foot-links"><a href="#apropos">À propos et aide</a><a href="#securite">Rester en sécurité</a><a href="#conditions">Conditions d'utilisation</a><a href="#confidentialite">Confidentialité</a><a href="#mentions">Mentions légales</a><a href="https://github.com/exiozz/RobloxTool" target="_blank" rel="noopener">Code source sur GitHub ↗</a><a href="https://github.com/exiozz/RobloxTool/issues" target="_blank" rel="noopener">Signaler un problème ↗</a></p>
+  <p>Spawnpoint n'est pas affilié à Roblox Corporation. Roblox et Roblox Studio sont des marques de Roblox Corporation.</p>
 </footer></main>
 </div>
 </div>
